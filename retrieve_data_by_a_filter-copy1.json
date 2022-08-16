@@ -1,0 +1,37 @@
+{
+  "display_name": "Retrieve data by a filter",
+  "metadata": {
+    "tags": [
+      "One-Liner",
+      "Pandas"
+    ],
+    "description": "Compilation of different row filtering in pandas.",
+    "display_name": "Retrieve data by a filter",
+    "code": [
+      "import pandas as pd",
+      "",
+      "# Single filter",
+      "df.loc[df['colname'] == \"the_condition\"]",
+      "df['colname']",
+      "",
+      "# Multiple filter",
+      "multi_filter_df = df.loc[(df['colname1'] == 'my_condition') & (df['colname2'] == 'my_condition') & (df['colname3'] > 70)]",
+      "    # (and == &) (or == |)",
+      "",
+      "# Return rows that contain mega in the Name column",
+      "df.loc[df['Name'].str.contains('Mega')]",
+      "",
+      "# Return rows that DO NOT contain mega in the Name column",
+      "df.loc[~df['Name'].str.contains('Mega')]",
+      "",
+      "# Return Fire or Grass pokemons",
+      "df.loc[df['Type 1'].str.contains('Fire|Grass', regex=True)]",
+      "",
+      "# Return Pokemons that start with Pi, requires regex knowledge",
+      "import re",
+      "df.loc[df['Name'].str.contains('^pi[a-z]*', flags=re.I, regex=True)]"
+    ],
+    "language": "Python"
+  },
+  "schema_name": "code-snippet"
+}

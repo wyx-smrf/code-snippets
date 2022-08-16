@@ -1,0 +1,20 @@
+{
+  "display_name": "Modify data",
+  "metadata": {
+    "tags": [
+      "Pandas",
+      "One-Liner"
+    ],
+    "display_name": "Modify data",
+    "code": [
+      "import pandas as pd",
+      "df.loc[df['Type 1'] == 'Fire', 'Legendary'] = True",
+      "",
+      "'''",
+      "In the columns specified, it finds that column that contains boolean array, and setting it to True means that all Fire pokemons would become legendary.",
+      "'''"
+    ],
+    "language": "Python"
+  },
+  "schema_name": "code-snippet"
+}

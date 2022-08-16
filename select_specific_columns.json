@@ -1,0 +1,20 @@
+{
+  "display_name": "2. Select columns",
+  "metadata": {
+    "tags": [
+      "Data Exploration"
+    ],
+    "description": "Pick the specific columns in the DataFrame to be used for analysis.",
+    "display_name": "2. Select columns",
+    "code": [
+      "# View all the column names",
+      "df.columns",
+      "",
+      "# Select the important columns above and create a new DataFrame for those columns",
+      "new_df = df[['colname1', 'colname2', 'colname3', ",
+      "             'colname4', 'colname5', 'colname6']]"
+    ],
+    "language": "Python"
+  },
+  "schema_name": "code-snippet"
+}

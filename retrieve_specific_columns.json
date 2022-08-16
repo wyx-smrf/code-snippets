@@ -1,0 +1,26 @@
+{
+  "display_name": "Retrieve Specific Columns",
+  "metadata": {
+    "tags": [
+      "Pandas"
+    ],
+    "description": "Retrieve specific columns of the DataFrame. ",
+    "display_name": "Retrieve Specific Columns",
+    "code": [
+      "import pandas as pd ",
+      "",
+      "# Specify column list to retrievve",
+      "col_list = ['colname1', 'colname2', 'colname3']",
+      "",
+      "# Get specific columns",
+      "def get_specific_columns(data, column_list):",
+      "    df_func = data[column_list]",
+      "    return df_func",
+      "",
+      "# Use the function",
+      "df_custom = get_specific_columns(df, col_list)"
+    ],
+    "language": "Python"
+  },
+  "schema_name": "code-snippet"
+}

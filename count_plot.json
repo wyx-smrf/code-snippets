@@ -1,0 +1,21 @@
+{
+  "display_name": "Count Plot",
+  "metadata": {
+    "tags": [
+      "Visualization"
+    ],
+    "description": "Returns a graph which contains the count of an element in a column.",
+    "display_name": "Count Plot",
+    "code": [
+      "import seaborn as sns",
+      "",
+      "def seaborn_countplot(dataframe, str_colname):",
+      "    sns.countplot(data=dataframe, x=str_colname)",
+      "    figure_plot = plt.show()",
+      "    ",
+      "    return figure_plot"
+    ],
+    "language": "Python"
+  },
+  "schema_name": "code-snippet"
+}

@@ -1,0 +1,15 @@
+{
+  "display_name": "Rename element in a column",
+  "metadata": {
+    "tags": [
+      "Pandas"
+    ],
+    "display_name": "Rename element in a column",
+    "code": [
+      "import pandas as pd",
+      "df.loc[df['Type 1'] == 'Fire', 'Type 1'] = 'Flamer'"
+    ],
+    "language": "Python"
+  },
+  "schema_name": "code-snippet"
+}

@@ -1,0 +1,18 @@
+{
+  "display_name": "Check the data in categorical column",
+  "metadata": {
+    "tags": [],
+    "display_name": "Check the data in categorical column",
+    "code": [
+      "# Retrieve categorical columns",
+      "[col for col in df.columns if df[col].dtype=='object'] ",
+      "",
+      "# Check the categories in each column",
+      "for col in cat_col:",
+      "    print('{} has {} values '.format(col,df[col].unique()))",
+      "    print('\\n')"
+    ],
+    "language": "Python"
+  },
+  "schema_name": "code-snippet"
+}

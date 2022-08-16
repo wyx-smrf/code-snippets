@@ -1,0 +1,14 @@
+{
+  "display_name": "Return column names by a condition",
+  "metadata": {
+    "tags": [
+      "One-Liner"
+    ],
+    "display_name": "Return column names by a condition",
+    "code": [
+      "[cols for cols in df.columns if df[cols].dtype=='object']"
+    ],
+    "language": "Python"
+  },
+  "schema_name": "code-snippet"
+}

@@ -1,0 +1,20 @@
+{
+  "display_name": "Reposition a column",
+  "metadata": {
+    "tags": [
+      "Pandas",
+      "One-Liner"
+    ],
+    "display_name": "Reposition a column",
+    "code": [
+      "# TANGINA",
+      "",
+      "cols = list(df.columns)",
+      "",
+      "df = df[cols[0:4] + [cols[-1]] + cols[4:12]]",
+      "    # Place the last column in the 4th column"
+    ],
+    "language": "Python"
+  },
+  "schema_name": "code-snippet"
+}

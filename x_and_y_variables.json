@@ -1,0 +1,27 @@
+{
+  "display_name": "X and y variables",
+  "metadata": {
+    "tags": [
+      "Toy Dataset"
+    ],
+    "description": "Returns the X and y variables of the datasets present natively in scikit-learn.",
+    "display_name": "X and y variables",
+    "code": [
+      "# Specify the dataset from scikit-learn",
+      "data = load_breast_cancer()",
+      "",
+      "# Return independent and dependent variables",
+      "def xy_variables(sklearn_dataset):",
+      "    features = pd.DataFrame(data=sklearn_dataset['data'],",
+      "                      columns=sklearn_dataset['feature_names'])",
+      "    target = pd.Series(data = sklearn_dataset['target'])",
+      "    ",
+      "    return features, target",
+      "",
+      "# Use the function",
+      "X, y = xy_variables(data)"
+    ],
+    "language": "Python"
+  },
+  "schema_name": "code-snippet"
+}

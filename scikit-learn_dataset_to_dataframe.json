@@ -1,0 +1,46 @@
+{
+  "display_name": "Scikit-learn dataset to DataFrame",
+  "metadata": {
+    "tags": [
+      "Toy Dataset"
+    ],
+    "description": "Returns raw data from scikit-learn to a pandas DataFrame. ",
+    "display_name": "Scikit-learn dataset to DataFrame",
+    "code": [
+      "from sklearn.datasets import load_iris",
+      "",
+      "# Specify the dataset from scikit-learn",
+      "data = load_iris()",
+      "",
+      "# Convert sklearn dataset to pandas dataframe",
+      "def sklearn_df_transformation(sklearn_dataset, usage='regression'):",
+      "    ",
+      "    # Specified uses, raises error if input is not in the list",
+      "    usages = ['classification', 'regression']",
+      "    ",
+      "    if usage not in usages:",
+      "        raise ValueError(\"Invalid operation type. Expected one of: %s\" % usages)",
+      "    ",
+      "    # Specifies the data and the column",
+      "    sklearn_df = pd.DataFrame(data=sklearn_dataset['data'], ",
+      "                      columns=sklearn_dataset['feature_names'])",
+      "    ",
+      "    # Adds target to the dataframe",
+      "    sklearn_df['target'] = pd.Series(sklearn_dataset['target'])",
+      "    ",
+      "    # If usage is classification, adds the class names of the targets",
+      "    if (usage == 'classification'):",
+      "        sklearn_df['class'] = pd.Categorical.from_codes(sklearn_dataset.target,",
+      "                                            sklearn_dataset.target_names)",
+      "    else:",
+      "        pass",
+      "    ",
+      "    return sklearn_df",
+      "",
+      "# Use the function",
+      "df = sklearn_df_transformation(iris, usage='classification')"
+    ],
+    "language": "Python"
+  },
+  "schema_name": "code-snippet"
+}

@@ -1,0 +1,19 @@
+{
+  "display_name": "4. View DataFrame info",
+  "metadata": {
+    "tags": [
+      "Data Exploration"
+    ],
+    "description": "Return the descriptive statistics and data types of the DataFrame.",
+    "display_name": "4. View DataFrame info",
+    "code": [
+      "# View summary statistics of each column",
+      "df.describe()",
+      "",
+      "# View data types of each column",
+      "df.dtypes"
+    ],
+    "language": "Python"
+  },
+  "schema_name": "code-snippet"
+}

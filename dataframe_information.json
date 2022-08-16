@@ -1,0 +1,27 @@
+{
+  "display_name": "Dataframe Information",
+  "metadata": {
+    "tags": [],
+    "description": "Returns the column information and summary statistics of a dataframe. ",
+    "display_name": "Dataframe Information",
+    "code": [
+      "import pandas as pd",
+      "",
+      "# Return information about the dataset",
+      "def data_information(dataframe):",
+      "    ",
+      "    # Column information",
+      "    col_info = dataframe.info()",
+      "    ",
+      "    # Summary statistics",
+      "    stats = dataframe.describe()",
+      "    ",
+      "    return col_info, stats",
+      "",
+      "# Use function",
+      "df_info, df_stats = data_information(heart)"
+    ],
+    "language": "Python"
+  },
+  "schema_name": "code-snippet"
+}

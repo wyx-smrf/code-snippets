@@ -1,0 +1,19 @@
+{
+  "display_name": "\u25c6 Logical Operator: OR",
+  "metadata": {
+    "tags": [
+      "One-Liner"
+    ],
+    "description": "Retrieve rows that meet the condition of OR operator.",
+    "display_name": "\u25c6 Logical Operator: OR",
+    "code": [
+      "# Create or condition ",
+      "or_cond = ((df['continent'] == 'Asia') | (df['continent'] == 'Europe'))",
+      "",
+      "# Return DataFrame of Asian or European continents",
+      "df.loc[or_cound]"
+    ],
+    "language": "Python"
+  },
+  "schema_name": "code-snippet"
+}

@@ -1,0 +1,26 @@
+{
+  "display_name": "Remove duplicates",
+  "metadata": {
+    "tags": [
+      "Pandas",
+      "Function"
+    ],
+    "description": "Removes duplicated rows in the data. ",
+    "display_name": "Remove duplicates",
+    "code": [
+      "def remove_duplicates(dataframe):",
+      "    ",
+      "    # Retrieve duplicates",
+      "    dups = dataframe[dataframe.duplicated()]",
+      "    ",
+      "    if len(dups)==0: # If there is no duplicates",
+      "        return 'There are no duplicates in the data'",
+      "    ",
+      "    else: # Drops the duplicates",
+      "        drop_dups = data.drop_duplicates(keep='first',inplace=True)",
+      "        return drop_dups"
+    ],
+    "language": "Python"
+  },
+  "schema_name": "code-snippet"
+}

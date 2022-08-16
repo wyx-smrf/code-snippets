@@ -1,0 +1,15 @@
+{
+  "display_name": "1. Read CSV file",
+  "metadata": {
+    "tags": [
+      "Data Exploration"
+    ],
+    "description": "Read a comma-separated values (csv) file into DataFrame.",
+    "display_name": "1. Read CSV file",
+    "code": [
+      "df = pd.read_csv('filename.csv')"
+    ],
+    "language": "Python"
+  },
+  "schema_name": "code-snippet"
+}

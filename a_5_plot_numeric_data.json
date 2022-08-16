@@ -1,0 +1,25 @@
+{
+  "display_name": "5. Plot numeric data",
+  "metadata": {
+    "tags": [
+      "Data Exploration"
+    ],
+    "description": "Generate plots of numeric data to find insights and determine outliers. ",
+    "display_name": "5. Plot numeric data",
+    "code": [
+      "# Create histogram",
+      "df.hist(bins=60, figsize=(20,10))",
+      "",
+      "# Create scatter plot",
+      "df.plot(kind='scatter',    # Specify the kind of plot to be used",
+      "        x='colname_x',     # Specify column name for x-axis",
+      "        y='colname_y',     # Specify column name for y-axis",
+      "        figsize=(20,10))",
+      "",
+      "# Create bar graph",
+      "df['colname'].value_counts().plot(kind='bar', figsize=(20,10))"
+    ],
+    "language": "Python"
+  },
+  "schema_name": "code-snippet"
+}

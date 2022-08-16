@@ -1,0 +1,18 @@
+{
+  "display_name": "Rows and Columns ",
+  "metadata": {
+    "tags": [],
+    "description": "Return the number of rows and columns in a dataset.",
+    "display_name": "Rows and Columns ",
+    "code": [
+      "def row_column_number(data):",
+      "    ",
+      "    rows, columns = data.shape",
+      "    ",
+      "    print(f'Number of rows for the dataset are {rows}')",
+      "    print(f'Number of columns for the dataset are {columns}')"
+    ],
+    "language": "Python"
+  },
+  "schema_name": "code-snippet"
+}

@@ -1,0 +1,22 @@
+{
+  "display_name": "Filter Data",
+  "metadata": {
+    "tags": [
+      "One-Liner"
+    ],
+    "description": "Filter data",
+    "display_name": "Filter Data",
+    "code": [
+      "# Filter by a condition",
+      "new_df = df[df['colname']=='Good']",
+      "",
+      "",
+      "# Filter by selecting columns",
+      "new_df = df[['colname1', 'colname2', 'colname3', ",
+      "             'colname4', 'colname5', 'colname6']]",
+      ""
+    ],
+    "language": "Python"
+  },
+  "schema_name": "code-snippet"
+}

@@ -1,0 +1,26 @@
+{
+  "display_name": "\u25c6 Count values",
+  "metadata": {
+    "tags": [
+      "One-Liner.()"
+    ],
+    "description": "Count the number of different values in a column. ",
+    "display_name": "\u25c6 Count values",
+    "code": [
+      "# Count on single column",
+      "df['colname'].value_counts()",
+      "",
+      "",
+      "# For Multiple columns",
+      "",
+      "# Selected columns in list must have the same values",
+      "new_df = df[['colname1','colname2','colname3',",
+      "             'colname4','colname5','colname6']]",
+      "",
+      "# Count on multiple columns",
+      "new_df.apply(pd.Series.value_counts)"
+    ],
+    "language": "Python"
+  },
+  "schema_name": "code-snippet"
+}

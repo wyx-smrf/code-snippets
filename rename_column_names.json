@@ -1,0 +1,21 @@
+{
+  "display_name": "Rename column names",
+  "metadata": {
+    "tags": [
+      "One-Liner",
+      "Pandas"
+    ],
+    "display_name": "Rename column names",
+    "code": [
+      "# Rename by creating a list to the names to be replaced",
+      "df.columns=['cols','abb_col_names']",
+      "",
+      "",
+      "# Rename using names from a dataset",
+      "df.columns = columns['abb_col_names'].values",
+      ""
+    ],
+    "language": "Python"
+  },
+  "schema_name": "code-snippet"
+}

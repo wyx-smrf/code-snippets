@@ -1,0 +1,23 @@
+{
+  "display_name": "Highest Correlation",
+  "metadata": {
+    "tags": [],
+    "description": "Returns highest correlation without 1",
+    "display_name": "Highest Correlation",
+    "code": [
+      "def highest_correlation(dataframe):",
+      "    corr_table = dataframe.corr().unstack()",
+      "    df_corrvalues = corr_table.sort_values(ascending=False)",
+      "    no_ones = df_corrvalues[df_corrvalues < 1]",
+      "    no_ones.index.set_names([\"Row\", \"Column\"], inplace=True)",
+      "    ",
+      "    return no_ones",
+      "",
+      "# Use function",
+      "correlation = highest_correlation(heart)",
+      "correlation"
+    ],
+    "language": "Python"
+  },
+  "schema_name": "code-snippet"
+}

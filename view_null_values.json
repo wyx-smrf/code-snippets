@@ -1,0 +1,19 @@
+{
+  "display_name": "3. View null values",
+  "metadata": {
+    "tags": [
+      "Data Exploration"
+    ],
+    "description": "Find the null values in the DataFrame.",
+    "display_name": "3. View null values",
+    "code": [
+      "# View the total null values of all columns",
+      "df.isna().sum()",
+      "",
+      "# Returns the DataFrame with null values based on specified column",
+      "df[df['colname'].isna()]"
+    ],
+    "language": "Python"
+  },
+  "schema_name": "code-snippet"
+}
