@@ -11,7 +11,11 @@
       "df.isna().sum()",
       "",
       "# Returns the DataFrame with null values based on specified column",
-      "df[df['colname'].isna()]"
+      "df[df['colname'].isna()]",
+      "",
+      "# View null values across all columns",
+      "df[df.isnull().any(axis=1)]",
+      ""
     ],
     "language": "Python"
   },

@@ -1,0 +1,19 @@
+{
+  "display_name": "Optional: Merge Data",
+  "metadata": {
+    "tags": [
+      "Data Cleaning"
+    ],
+    "display_name": "Optional: Merge Data",
+    "code": [
+      "# Determine the 25th and 75th percentile",
+      "new_df = df.groupby('cat_column')['num_column'].describe().reset_index()[['cat_column','25%','75%']]",
+      "",
+      "",
+      "# Merge the 25th and 75th percentile into the DataFrame",
+      "df = df.merge(new_df, on='cat_column', how='left')"
+    ],
+    "language": "Python"
+  },
+  "schema_name": "code-snippet"
+}

@@ -1,0 +1,26 @@
+{
+  "display_name": "2. Random split",
+  "metadata": {
+    "tags": [
+      "Data Splitting"
+    ],
+    "description": "Split arrays or matrices into random train and test subsets.",
+    "display_name": "2. Random split",
+    "code": [
+      "from sklearn.model_selection import train_test_split",
+      "",
+      "# Split data into two groups",
+      "train_set, test_set = train_test_split(df, ",
+      "                                       test_size=0.2,    # Split Proportion",
+      "                                       random_state=42)  # Retain Split",
+      "",
+      "# Split data into four groups",
+      "# X and y should be set first",
+      "X_train, X_test, y_train, y_test = train_test_split(X, y, ",
+      "                                                    test_size=0.2, ",
+      "                                                    random_state=42)"
+    ],
+    "language": "Python"
+  },
+  "schema_name": "code-snippet"
+}

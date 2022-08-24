@@ -1,0 +1,29 @@
+{
+  "display_name": "4. Compare split proportions",
+  "metadata": {
+    "tags": [
+      "Data Splitting"
+    ],
+    "description": "Provides a DataFrame of resulting proportions among different splits. ",
+    "display_name": "4. Compare split proportions",
+    "code": [
+      "# Returns the proportion of each splits",
+      "def y_cat_proportions(data):",
+      "    y = df['y_category']                    # Define the categorical column of the target here",
+      "    return y.value_counts() / len(data)",
+      "",
+      "# View data in DataFrame",
+      "compare_props = pd.DataFrame({",
+      "    \"Overall\": y_cat_proportions(df),",
+      "    \"Stratified\": y_cat_proportions(df_stratss), ",
+      "    \"Random\": y_cat_proportions(df_tts),   # Use train test split of two groups ",
+      "}).sort_index()",
+      "",
+      "# Add error metrics",
+      "compare_props[\"Rand. %error\"] = 100 * compare_props[\"Random\"] / compare_props[\"Overall\"] - 100",
+      "compare_props[\"Strat. %error\"] = 100 * compare_props[\"Stratified\"] / compare_props[\"Overall\"] - 100"
+    ],
+    "language": "Python"
+  },
+  "schema_name": "code-snippet"
+}

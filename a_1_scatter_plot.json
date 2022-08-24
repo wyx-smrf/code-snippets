@@ -1,0 +1,19 @@
+{
+  "display_name": "1. Basic scatter plot",
+  "metadata": {
+    "tags": [
+      "Basic Data Visualization"
+    ],
+    "description": "Generate a scatter plot to specified numeric columns.",
+    "display_name": "1. Basic scatter plot",
+    "code": [
+      "# Basic scatter plot",
+      "df.plot(kind=\"scatter\", x=\"x_colname\", y=\"y_colname\", alpha=0.1)",
+      "",
+      "# Optional: Save the figure",
+      "save_fig(\"housing_prices_scatterplot\")"
+    ],
+    "language": "Python"
+  },
+  "schema_name": "code-snippet"
+}

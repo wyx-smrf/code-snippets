@@ -1,0 +1,19 @@
+{
+  "display_name": "1. Define features and target",
+  "metadata": {
+    "tags": [
+      "Data Splitting"
+    ],
+    "description": "Set the features as X variable and the target as y variable.",
+    "display_name": "1. Define features and target",
+    "code": [
+      "#Get Target data (you can also use .copy())",
+      "y = data['target']",
+      "",
+      "#Load X Variables into a Pandas Dataframe with columns ",
+      "X = data.drop(['target'], axis = 1)"
+    ],
+    "language": "Python"
+  },
+  "schema_name": "code-snippet"
+}

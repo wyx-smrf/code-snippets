@@ -1,0 +1,14 @@
+{
+  "display_name": "Encode categorical data",
+  "metadata": {
+    "tags": [
+      "ML Preprocessing"
+    ],
+    "display_name": "Encode categorical data",
+    "code": [
+      "https://gist.github.com/wyx-smrf/dc8afd27e1b13c520fb73428cc0cebf2"
+    ],
+    "language": "Markdown"
+  },
+  "schema_name": "code-snippet"
+}

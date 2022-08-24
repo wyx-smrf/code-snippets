@@ -1,0 +1,16 @@
+{
+  "display_name": "5. Remove target category",
+  "metadata": {
+    "tags": [
+      "Data Splitting"
+    ],
+    "description": "Return to the original data by removing the target category.",
+    "display_name": "5. Remove target category",
+    "code": [
+      "for each_set in (strat_train_set, strat_test_set):",
+      "    each_set.drop(\"y_category\", axis=1, inplace=True)"
+    ],
+    "language": "Python"
+  },
+  "schema_name": "code-snippet"
+}

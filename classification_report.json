@@ -2,8 +2,7 @@
   "display_name": "Classification Report",
   "metadata": {
     "tags": [
-      "Metrics",
-      "Classification"
+      "Metrics"
     ],
     "description": "Build a text report showing the main classification metrics.",
     "display_name": "Classification Report",

@@ -1,11 +1,11 @@
 {
-  "display_name": "5. Plot numeric data",
+  "display_name": "6. Plot numeric data",
   "metadata": {
     "tags": [
       "Data Exploration"
     ],
     "description": "Generate plots of numeric data to find insights and determine outliers. ",
-    "display_name": "5. Plot numeric data",
+    "display_name": "6. Plot numeric data",
     "code": [
       "# Create histogram",
       "df.hist(bins=60, figsize=(20,10))",

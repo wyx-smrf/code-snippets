@@ -1,0 +1,26 @@
+{
+  "display_name": "5. Look for correlations",
+  "metadata": {
+    "tags": [
+      "Data Exploration"
+    ],
+    "description": "Compute pairwise correlation of columns, excluding NA/null values.",
+    "display_name": "5. Look for correlations",
+    "code": [
+      "# View as numbers",
+      "corr_matrix = df.corr()",
+      "corr_matrix[\"target_column\"].sort_values(ascending=False)",
+      "",
+      "# View as graph",
+      "from pandas.plotting import scatter_matrix",
+      "",
+      "# First 4 columns that have the highest correlation to the target column",
+      "attributes = [\"column1\", \"column2\", ",
+      "              \"column3\", \"column4\"]",
+      "",
+      "scatter_matrix(housing[attributes], figsize=(12, 8))"
+    ],
+    "language": "Python"
+  },
+  "schema_name": "code-snippet"
+}

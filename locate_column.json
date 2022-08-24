@@ -1,0 +1,14 @@
+{
+  "display_name": "Locate column",
+  "metadata": {
+    "tags": [
+      "One-Liner"
+    ],
+    "display_name": "Locate column",
+    "code": [
+      "tree_census_subset.loc[mask, 'health']"
+    ],
+    "language": "Python"
+  },
+  "schema_name": "code-snippet"
+}

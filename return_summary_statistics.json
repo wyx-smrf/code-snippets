@@ -11,7 +11,11 @@
       "df.describe()",
       "",
       "# View data types of each column",
-      "df.dtypes"
+      "df.dtypes",
+      "df.info()",
+      "",
+      "# View means of values in a categorical column",
+      "df.groupby('cat_column').mean()"
     ],
     "language": "Python"
   },

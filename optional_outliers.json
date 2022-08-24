@@ -1,0 +1,21 @@
+{
+  "display_name": "Optional: Outliers",
+  "metadata": {
+    "tags": [],
+    "display_name": "Optional: Outliers",
+    "code": [
+      "'''This command will convert all of the values under the 25th percentile to become inside the 25th percentile which is the lower limit'''",
+      "",
+      "",
+      "mask = tcs_alive['tree_dbh']<tcs_alive['25%']",
+      "tcs_alive.loc[mask,'tree_dbh'] = tcs_alive['25%']",
+      "",
+      "'''This command will convert all of the values above the 75th percentile to become inside the 75th percentile which is the upper limit'''",
+      "",
+      "mask = tcs_alive['tree_dbh']>tcs_alive['75%']",
+      "tcs_alive.loc[mask,'tree_dbh'] = tcs_alive['75%']"
+    ],
+    "language": "Python"
+  },
+  "schema_name": "code-snippet"
+}

@@ -2,8 +2,7 @@
   "display_name": "Remove duplicates",
   "metadata": {
     "tags": [
-      "Pandas",
-      "Function"
+      "Data Cleaning"
     ],
     "description": "Removes duplicated rows in the data. ",
     "display_name": "Remove duplicates",

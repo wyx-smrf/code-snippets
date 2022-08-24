@@ -1,0 +1,38 @@
+{
+  "display_name": "Map scatter plot",
+  "metadata": {
+    "tags": [
+      "Basic Data Visualization"
+    ],
+    "display_name": "Map scatter plot",
+    "code": [
+      "# Define the scatter plot parameters",
+      "# Use values as a column string",
+      "sp_params = {'data':               housing,",
+      "             'x_axis':            'longitude',",
+      "             'y_axis':            'latitude',",
+      "             'pt_size_basis':     'population',",
+      "             'color_basis':       'median_house_value'}",
+      "",
+      "# Function for the scatter plot",
+      "def colorful_scatterplot(data, x_axis, y_axis, pt_size_basis, color_basis):",
+      "    data.plot(",
+      "        kind=\"scatter\", ",
+      "        x=x_axis, y=y_axis, ",
+      "        alpha=0.4, figsize=(10,7),",
+      "        s=housing[pt_size_basis]/100,    # Marker size",
+      "        label=\"anything\",                # Marker label",
+      "        c=color_basis,                   # Marker color",
+      "        cmap=plt.get_cmap(\"jet\"),        # Colormap of markers",
+      "        colorbar=True,                   # Show color bar",
+      "        sharex=True)                     # Show values in x-axis",
+      "    plt.legend()",
+      "    return plt.show()",
+      "",
+      "# Use the dictionary as parameters of the function",
+      "colorful_scatterplot(**sp_params)"
+    ],
+    "language": "Python"
+  },
+  "schema_name": "code-snippet"
+}

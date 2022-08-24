@@ -2,8 +2,7 @@
   "display_name": "Accuracy and Precision",
   "metadata": {
     "tags": [
-      "Metrics",
-      "Classification"
+      "Metrics"
     ],
     "description": "Return the accuracy and precision of an ML classifier.",
     "display_name": "Accuracy and Precision",

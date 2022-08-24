@@ -1,0 +1,15 @@
+{
+  "display_name": "1. Clean missing values",
+  "metadata": {
+    "tags": [
+      "Data Cleaning"
+    ],
+    "description": "Replace null values with a valid data. ",
+    "display_name": "1. Clean missing values",
+    "code": [
+      "https://gist.github.com/wyx-smrf/c542a61bf32f61cb1c7a8347b318e6db"
+    ],
+    "language": "Markdown"
+  },
+  "schema_name": "code-snippet"
+}

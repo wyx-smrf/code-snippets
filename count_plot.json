@@ -2,7 +2,7 @@
   "display_name": "Count Plot",
   "metadata": {
     "tags": [
-      "Visualization"
+      "Basic Data Visualization"
     ],
     "description": "Returns a graph which contains the count of an element in a column.",
     "display_name": "Count Plot",
